@@ -1,0 +1,73 @@
+/**
+ * Created by CaoChen on 18/6/21.
+ */
+export default {
+  'GET /my/path/here': {
+    status: 'ok',
+    msg: '成功',
+    data: [
+      {
+        plan: '2018春季绩效评定',
+        range: '2017年上半年',
+        biz: '集团产品技术线',
+        center: '基础技术中心',
+        dep: '平台产品部',
+        userCode: '20000001',
+        userName: '李四',
+        userLevel: 'P6',
+        userPosition: '产品经理',
+        appraiser: '李四的考核人',
+        auditor: '李四的结果审核人',
+        status: 1,
+      },
+      {
+        plan: '2018春季绩效评定2',
+        range: '2017年上半年',
+        biz: '集团产品技术线',
+        center: '基础技术中心',
+        dep: '平台产品部',
+        userCode: '20000001',
+        userName: '李四',
+        userLevel: 'P6',
+        userPosition: '产品经理',
+        appraiser: '李四的考核人',
+        auditor: '李四的结果审核人',
+        status: 3,
+      },
+    ],
+  },
+  'GET /my/path/here2': {
+    status: 'ok',
+    msg: '成功',
+    data: [
+      {
+        plan: '2018春季绩效评定',
+        range: '2017年上半年',
+        biz: '集团产品技术线',
+        center: '基础技术中心',
+        dep: '平台产品部',
+        userCode: '20000001',
+        userName: '李四',
+        userLevel: 'P6',
+        userPosition: '产品经理',
+        appraiser: '李四的考核人',
+        auditor: '李四的结果审核人',
+        status: 1,
+      },
+      {
+        plan: '2018春季绩效评定2',
+        range: '2017年上半年',
+        biz: '集团产品技术线',
+        center: '基础技术中心',
+        dep: '平台产品部',
+        userCode: '20000001',
+        userName: '李四',
+        userLevel: 'P6',
+        userPosition: '产品经理',
+        appraiser: '李四的考核人',
+        auditor: '李四的结果审核人',
+        status: 3,
+      },
+    ],
+  },
+};

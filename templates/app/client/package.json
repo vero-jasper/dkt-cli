@@ -1,0 +1,71 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ENVIRONMENT=development redskull start --dashboard false",
+    "off": "ENVIRONMENT=shoff redskull build",
+    "test": "ENVIRONMENT=testing redskull build",
+    "build": "ENVIRONMENT=production redskull build",
+    "dev": "ENVIRONMENT=development redskull build",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@lianjia/antd": "^3.2.3",
+    "autoprefixer": "^9.0.1",
+    "axios": "^0.18.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-import": "^1.1.1",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-stage-2": "^6.1.18",
+    "classnames": "^2.2.5",
+    "hd-webpack-plugin": "0.0.6",
+    "husky": "^0.13.4",
+    "jquery": "^3.2.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "lint-staged": "^7.2.0",
+    "moment": "^2.22.2",
+    "prettier": "^1.13.7",
+    "prop-types": "^15.6.2",
+    "react": "^16.0.0",
+    "react-addons-pure-render-mixin": "^15.5.2",
+    "react-anything-sortable": "^1.7.2",
+    "react-css-modules": "^3.7.10",
+    "react-dom": "^16.0.0",
+    "react-mixin": "^4.0.0",
+    "react-redux": "^4.4.6",
+    "react-router": "^3.0.0",
+    "react-router-redux": "^4.0.7",
+    "react-slick": "^0.15.0",
+    "redux": "^3.7.2",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0"
+  },
+  "redskull": {
+    "port": 8080,
+    "src": "./src",
+    "entry": "index.js",
+    "dist": "./dist",
+    "devConfig": "./webpack/config.dev.js",
+    "prodConfig": "./webpack/config.prod.js",
+    "favico": "./src/icons/favicon.ico",
+    "mock": "./mock/async",
+    "pubilcPath": "http://127.0.0.1:5000/",
+    "polyfills": false
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css,less}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
